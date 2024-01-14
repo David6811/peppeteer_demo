@@ -19,17 +19,17 @@ function App() {
       <h1>Login Page</h1>
       <label>
         Username:
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <input id="username" type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
       </label>
       <br />
       <label>
         Password:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
       </label>
       <br />
-      <button onClick={handleLogin}>Login</button>
+      <button type="submit" onClick={handleLogin}>Login</button>
       <br />
-      <label>{message}</label>
+      <label id="msg">{message}</label>
     </div>
   );
 }
